@@ -1,0 +1,303 @@
+/*------------------------------------*\
+   Index
+   - Navigation
+   - banner
+   - Wrapper 1
+   - Wrapper 2
+   - Special-heading
+   - Wrapper 3
+   - Pecial-footer
+   - Footer-bottom
+   - line Style (After)
+/*------------------------------------*\
+
+
+/*--------------Start Body--------------------*/
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+}
+/*--------------End Body--------------------*/
+
+/*--------------Start Navigation--------------------*/
+.Navigation 
+{
+    padding: 0 20px;
+    color: #fff;
+}
+.bakery-logo {
+    max-width: 75px;
+    float: left;
+    padding: 14px 20px;  
+}
+.bakery-logo img {
+    max-width: 180%;
+}
+.navbar {
+    margin: 0px;
+    float: right;
+}
+.navbar li {
+    list-style: none;
+    float: left;
+}
+.navbar li a {
+    color: #fff;
+    padding: 28px 15px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.navbar a:hover
+{
+    color: #ae9768;
+}
+/*--------------End Navigation--------------------*/
+
+/*--------------Start Banner--------------------*/
+.banner
+{
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/drew-coffman.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* display: inline-block; */
+    vertical-align: middle;
+    color: rgba(255,255,255, .92);
+    font-size: 25px;
+}
+.banner .content
+{
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    padding-top: 17%;
+}
+.banner h1
+{
+    font-family: "Alegreya";
+    font-size: 50px;
+}
+.banner .content .btn1,.btn2
+{
+    padding: 15px 22px;
+    border: 2px solid transparent;
+    margin-top: 30px;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 16px;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 4px;
+}
+.banner .content .btn1
+{
+    background-color: #8e7754;
+    color:#fff;
+    
+}
+.banner .content .btn2
+{
+    background: none;
+    border-color: #fff !important;
+    color: #fff;
+}
+.banner .content .btn1:hover,
+.banner .content .btn1:focus,
+.banner .content .btn2:hover,
+.banner .content .btn2:focus
+{
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+/*--------------End Banner--------------------*/
+
+/*--------------Start Wrapper 1--------------------*/
+.wrapper1
+{
+    width: 90%;
+    display: flex;
+    justify-items: center;
+    padding: 20px 20px;
+    margin: 40px 70px;
+    border: 15px ;
+}
+.wrapper1 img
+{
+    width: 550px;
+}
+.wrapper1-img
+{
+   
+    margin-right: 70px;
+}
+.wrapper1-text p
+{
+   color: #8f8f8f;
+
+}
+.wrapper1-text h2
+{
+   color: #303030;
+}
+/*--------------End Wrapper 1--------------------*/
+
+/*--------------Start Wrapper 2------------------*/
+.wrapper2
+{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    padding: 40px 0px;
+    border: 15px ;
+    background-color: #f8f8f8;
+}
+.wrapper2 img
+{
+    width: 500px;
+}
+.wrapper2-img
+{
+    margin-right: 70px;
+}
+.wrapper2-text
+{
+    padding: 80px 70px;
+    margin-right: 100px;
+}
+.wrapper2-text p,
+.special-heading .heading-body .item p
+{
+   color: #8f8f8f;
+
+}
+.wrapper2-text h2,
+.special-heading .heading-body .item h3
+{
+   color: #303030;
+   
+}
+/*--------------End Wrapper 2--------------------*/
+
+/*--------------Start Heading--------------------*/
+.special-heading .heading-title
+{
+    text-align: center;
+    margin-top: 80px;
+}
+.special-heading .heading-body
+{   
+    width: 91%;
+    display: flex;
+    text-align: center;
+    padding-left: 75.5px;
+    padding-right: 40.5px;
+}
+.special-heading .heading-body .item
+{
+    padding-right: 35px;
+}
+.special-heading .heading-body img
+{
+    width: 100%;
+
+}
+/*--------------End Heading--------------------*/
+
+/*--------------Start Wrapper 3----------------*/
+.wrapper3
+{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    padding: 125px 0px;
+    border: 15px ;
+    background-color: #f8f8f8;
+}
+.wrapper3-map
+{
+    padding: 60px 1px;
+    margin-right: 20px;
+}
+.wrapper3-text
+{
+    padding: 40px 50px;
+}
+.wrapper3-text p,
+.special-heading .heading-body .item p,
+.special-footer .footer-body .item p,h5
+{
+   color: #8f8f8f;
+
+}
+.wrapper3-text h2,
+.special-heading .heading-body .item h3
+{
+   color: #433a3a;
+   
+}
+.mapouter
+{
+    position:relative;
+    text-align:right;
+    width:600px;height:400px;
+}
+.gmap_canvas 
+{overflow:hidden;
+    background:none!important;
+    width:600px;height:490px;
+}
+.gmap_iframe 
+{
+    width:600px!important;
+    height:490px!important;
+}
+/*--------------End Wrapper 3--------------------*/
+
+/*------------Start Special-footer---------------*/
+.special-footer .footer-body
+{  
+    background-color: #403d38; 
+    display: flex;
+    padding-left: 100px;
+}
+.special-footer .footer-body .item
+{
+    width: 20%;
+    padding-right: 45px;
+
+}
+.special-footer .footer-body .item h3,
+.footer-bottom p
+{
+    color: #ffffff;
+}
+/*------------End Special-footer--------------------*/
+
+/*------ -----Start Footer-bottom-------------------*/
+.footer-bottom
+{
+    background-color: #353330;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+}
+/*--------------End Footer-bottom--------------------*/
+
+/*-------------Start line Style (After)--------------*/
+.special-footer .footer-body .item h5::after
+ {
+    display: block;
+    content: "____________________________________________";
+}
+/*------------End line Style (After)------------------*/
