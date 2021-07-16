@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Assignment 3</title>
+        <title>Engage Bakery</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!---------------- Start Navigation ---------------->
-        <header class="Navigation">
-            <div class="bakery-logo">
-                <a href="#"><img src="images/bakery-light-1.png" alt="bakery Logo"></a>
+        <header class="home">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg fixed-top w-75 m-auto">
+                    <div class="bakery-logo">
+                        <a href="#"><img src="images/bakery-light-1.png" alt="bakery Logo"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">☰</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Out Offer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Out Offer</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#"> Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
+            <div class="banner">
+                <div class="content">
+                    <p>Welcome to</p>
+                    <h1>Family Bakery</h1>
+                    <p>We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>
+                    <button class="btn1">Learn More</button>
+                    <button class="btn2">Contact Us</button>
+                </div>
+            </div>
         </header>
         <!----------------- End Navigation ----------------->
 
         <!------------------ Start Home ------------------>
-        <div class="banner">
-            <div class="content">
-                <p>Welcome to</p>
-                <h1>Family Bakery</h1>
-                <p>We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>
-                <button class="btn1">Learn More</button>
-                <button class="btn2">Contact Us</button>
+        <section class="wrapper1">
+            <div class="container py-5">
+                <div class="row py-5 d-flex">
+                    <div class="col-md-6">
+                        <div class="wrapper1-img">
+                            <img src="images/alexandru-stavrica.jpg" alt="alexandru stavrica">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wrapper1-text">
+                            <h2>Who we are?</h2>
+                            <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house.
+                                We are so happy with this theme. Everyday it make our lives better.</p>
+                            <p>We care about environment.</p><br>
+                            <p>We are trusted by hundreds of clients.</p><br>
+                            <p>Social media loves us!</p><br>
+                            <p>This list is super easy to create.</p><br>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="wrapper1">
-            <div class="wrapper1-img">
-                <img src="images/alexandru-stavrica.jpg" alt="alexandru stavrica">
-            </div>
-            <div class="wrapper1-text">
-                <h2>Who we are?</h2>
-                <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house.
-                     We are so happy with this theme. Everyday it make our lives better.</p>
-                <p>We care about environment.</p><br>
-                <p>We are trusted by hundreds of clients.</p><br>
-                <p>Social media loves us!</p><br>
-                <p>This list is super easy to create.</p><br>
-            </div>
-        </div>
+        </section>
+
+
+
+
         <div class="wrapper2">
         <div class="wrapper2-text">
             <h2>Our Location</h2>
@@ -58,6 +92,7 @@
                  We are so happy with this theme. Everyday it make our lives better.</p><br>
             <p>Story on projects big and small from small residential extensions to full house. 
                 We are so happy with this theme. Everyday it make our lives better.</p>
+                
         </div>
         <div class="wrapper2-img">
             <img src="images/full-2-800x640.jpg" alt="full 2">
@@ -96,7 +131,7 @@
                         Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p><br>
                     <p>Our contact details:</p>
                     <p>Manchester St 123-78B, Random 713, UK</p>
-                    <p>+46 123 456 789</p>
+                    <p><i class="fas fa-phone-alt"></i> +46 123 456 789</p>
                     <p>+37 431 456 789</p>
                     <p>hello@sitename.com</p>
 
@@ -146,5 +181,9 @@
             <p>Copyright 2017. All rights reserved.</p>
         </div>
         <!--------------------- End Home ---------------->
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -12,6 +12,14 @@
 /*------------------------------------*\
 
 
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*--------------Start Body--------------------*/
 body
 {
@@ -23,58 +31,53 @@ body
 /*--------------End Body--------------------*/
 
 /*--------------Start Navigation--------------------*/
-.Navigation 
-{
-    padding: 0 20px;
-    color: #fff;
-}
-.bakery-logo {
-    max-width: 75px;
-    float: left;
-    padding: 14px 20px;  
-}
-.bakery-logo img {
-    max-width: 180%;
-}
-.navbar {
-    margin: 0px;
-    float: right;
-}
-.navbar li {
-    list-style: none;
-    float: left;
-}
-.navbar li a {
-    color: #fff;
-    padding: 28px 15px;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-}
-.navbar li a i {
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 7px;
-}
-.navbar a:hover
-{
-    color: #ae9768;
-}
-/*--------------End Navigation--------------------*/
-
-/*--------------Start Banner--------------------*/
-.banner
+.home
 {
     width: 100%;
     height: 750px;
     background-image: url(../images/drew-coffman.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* display: inline-block; */
     vertical-align: middle;
     color: rgba(255,255,255, .92);
     font-size: 25px;
 }
+.home .bakery-logo {
+  width: 8%;
+}
+.home .bakery-logo img {
+    max-width: 180%;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+}
+.navbar li a {
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar li a:hover {
+    color: #ae9768;
+}
+.navbar-toggler
+{
+    padding: 0.10rem !important;
+}
+.navbar .navbar-toggler-icon
+{
+    font-size: 30px;
+    color: #ae9768;
+    height: 1.8rem !important;
+}
+/*--------------End Navigation--------------------*/
+
+/*--------------Start Banner--------------------*/
+
 .banner .content
 {
     margin: auto;
@@ -125,21 +128,22 @@ body
 /*--------------Start Wrapper 1--------------------*/
 .wrapper1
 {
-    width: 90%;
-    display: flex;
-    justify-items: center;
-    padding: 20px 20px;
-    margin: 40px 70px;
-    border: 15px ;
-}
-.wrapper1 img
-{
-    width: 550px;
+    /*padding: 20px 0;*/
+    /*margin: 40px 0;*/
+    /*border: 15px ;*/
+
 }
 .wrapper1-img
 {
-   
-    margin-right: 70px;
+    width: 90%;
+}
+.wrapper1 img
+{
+    width: 100%;
+}
+.wrapper1-text
+{
+
 }
 .wrapper1-text p
 {
@@ -269,14 +273,16 @@ body
 {  
     background-color: #403d38; 
     display: flex;
-    padding-left: 100px;
+    padding: 60px;
+    padding-top: 30px;
 }
 .special-footer .footer-body .item
 {
     width: 20%;
-    padding-right: 45px;
+    padding-right: 50px;
 
 }
+
 .special-footer .footer-body .item h3,
 .footer-bottom p
 {
@@ -289,7 +295,7 @@ body
 {
     background-color: #353330;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     margin: auto;
 }
 /*--------------End Footer-bottom--------------------*/
@@ -298,6 +304,107 @@ body
 .special-footer .footer-body .item h5::after
  {
     display: block;
-    content: "____________________________________________";
+    content: "_______________________";
 }
 /*------------End line Style (After)------------------*/
+
+*, ::after, ::before 
+{
+    box-sizing: content-box;
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media screen and (max-width: 767.98px)
+{
+    .home
+    {
+        width: 100%;
+        height: 750px;
+        background-image: url(../images/drew-coffman.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        color: rgba(255,255,255, .92);
+        font-size: 25px;
+    }
+    .home .bakery-logo {
+        width: 15%;
+    }
+    .home .bakery-logo img {
+        max-width: 180%;
+    }
+    .navbar{transition: all 0.3s}
+    .navbar li {
+        background-color: #ae9768;
+        text-align: center;
+        padding: 0.5rem;
+        transition: all 0.3s;
+    }
+    .navbar li a {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    .navbar li a:hover {
+        color: #856404;
+    }
+    .navbar-toggler
+    {
+        padding: 0.10rem !important;
+    }
+    .navbar .navbar-toggler-icon
+    {
+        font-size: 30px;
+        color: #ae9768;
+        height: 1.8rem !important;
+    }
+    /*--------------End Navigation--------------------*/
+
+    /*--------------Start Banner--------------------*/
+
+    .banner .content
+    {
+        width: 420px;
+        text-align: center;
+        padding-top: 50%;
+    }
+    .banner h1,.banner p{
+        font-size: 15px;
+    }
+    .banner h1
+    {
+        font-size: 30px;
+    }
+    .banner .content .btn1,.btn2
+    {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .banner .content .btn1
+    {
+        background-color: #8e7754;
+        color:#fff;
+
+    }
+    .banner .content .btn2
+    {
+        background: none;
+        border-color: #fff !important;
+        color: #fff;
+    }
+    .banner .content .btn1:hover,
+    .banner .content .btn1:focus,
+    .banner .content .btn2:hover,
+    .banner .content .btn2:focus
+    {
+        background-color: #fff;
+        border-color: #fff;
+        color: #000;
+    }
+    /*--------------End Banner--------------------*/
+}
+
+ /*Medium devices (tablets, less than 992px)*/
+/*@media (max-width: 991.98px) */
+/*{*/
+
+/*}*/
